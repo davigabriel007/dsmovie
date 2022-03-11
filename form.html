@@ -30,14 +30,49 @@
     <main>
         <section id="dsmovie-form-section">
 
+            <!--colocar o card no container, tirando a listagem-->
             <div class="container dsmovie-form-container">
-
                 <div>
                     <div class="dsmovie-card">
                         <img src="https://www.themoviedb.org/t/p/original/rvtdN5XkWAfGX6xDuPL6yYS2seK.jpg" alt="Batman">
-                        <div class="dsmovie-card-description">
+                        
+                        <div class="dsmovie-form-description">
                             <h3>Batman</h3>
-                            <a class="dsmovie-btn" href="index.html">Cancelar</a>
+                            <!--tag para formulários-->
+                            <form class="dsmovie-form">
+                                <!--classe bootstrap estilizar formulário-->
+                                <div class="form-group dsmovie-form-group">
+                                    <!--sempre usado quando há um texto ao lado de uma caixinha de formulário-->
+                                    <label for="email">Informe seu email</label>
+                                    <!--entrada de dados-->
+                                    <!--mesmo nome no for e id para associar label e input, ajuda no cod javascript-->
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                                <div class="form-group dsmovie-form-group">
+                                    <label for="score">Informe sua avaliação</label>
+                                    <!--nome e ID é importante na programação-->
+                                    <!--select é caixinha que clica e desce opções-->
+                                    <select class="form-control" name="score" id="score">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+
+                                    </select>
+                                        
+
+                                </div>
+                                <div class="dsmovie-form-btn-container">
+                                    <!--submit é o tipo que salva os dados-->
+                                    <button class="dsmovie-btn" type="submit">Salvar</button>
+                                    <a class="dsmovie-btn" href="index.html">Cancelar</a>
+                                </div>
+                            </form>
+
+
+                            <!--botão agora direcionando novamente ao index-->
+                           
                         </div>
 
                     </div>
