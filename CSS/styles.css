@@ -1,26 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
+/*raiz do programa, usado especialmente para variaveis*/
+/*colocar as cores em variáveis no css é recomendado*/
 :root {
     --bg-gray:#ddd;
     --color-primary:#4D41C0;
     --white:#fff;
+    --text-gray: #4a4a4a;
 }
 
 *{
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
-
+/* bootstrap sobrescreve e a margem fica 0.5, então isto está dando margem 0 a todos os titulos*/
 h1, h2, h3, h4, h5, h6{
     margin: 0;
 }
-
+/*mudou a cor do corpo do site*/
 html, body{
     background-color: var(--bg-gray);
 
 }
 
-
+/*estilização cabeçalho*/
 header{
     background-color: var(--color-primary);
     color:var(--white);
@@ -29,36 +32,82 @@ header{
     align-items: center;
     
 }
-
+/*separando os itens do cabeçalho*/
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
+/*definindo tamanho e espessura da fonta*/
 nav h1{
     font-size: 24px;
     font-weight: 700;
 
 }
-
+/* tamanho e espessura da fonta*/
 nav a{
     font-size: 12px;
     font-weight: 400;
     
 }
-
+/* link não tem mais cor padrão e ao passar o mouse não muda de cor*/
 a, a:hover{
     text-decoration: none;
     color: unset;
 }
-
+/*criando margem e alinhando ao centro o vetor e o link*/
 .dsmovie-contact-container{
     display:flex;
     align-items: center;
     
 }
-
+/*dando margem ao vector*/
 .dsmovie-contact-container img{
     margin-right: 10px;
+}
+
+#dsmovie-card-list {
+    padding: 40px 0;
+
+} 
+
+/*estilizando card*/
+.dsmovie-card {
+    width: 360px;
+   
+}
+
+/*imagem ocupando 100% do espaço do card*/
+.dsmovie-card img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+ /*estilizando card*/
+.dsmovie-card-description {
+    padding: 10px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 0 0 8px 8px;
+}
+
+.dsmovie-card-description h3 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.dsmovie-btn, .dsmovie-btn:hover {
+    width: 180px;
+    height: 40px;
+    background-color: var(--color-primary);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
 }

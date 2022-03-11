@@ -1,30 +1,61 @@
+<!--usado para dizer que é um documento html-->
 <!DOCTYPE html>
 <html lang="en">
-
+<!--usado abreviação ! para ele pré-definir essas informações-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DSMovie</title>
 
-
+    <!--comando link para usar o bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
+    <!--comando para o html considerar o css-->
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
 
 <body>
+    <!--tag semântica para "cabeçalho"-->
     <header>
+        <!--tag semântica para "barra de navegação"-->
+        <!--container é uma classe do css que tem no bootstrap para delimitar os conteúdos no centro
+        e margem limite-->
         <nav class="container">
             <h1>DSMovie</h1>
+            <!--div tag de divisão necsse caso agrupando imagem e o link-->
+            <!--classe customizada criada-->
             <div class="dsmovie-contact-container">
+                <!--tag de imagem-->
+                <!--vector em svg-->
                 <img src="img/github.svg" alt="Github">
+                <!--tag de link-->
                 <a href="https://github.com/devsuperior">/devsuperior</a>
             </div>
         </nav>
     </header>
+    <!--tag semântica "conteúdo principal"-->
+    <main>
+        <!--tag para uma seção-->
+        <!--id usado para quando ocorre uma vez só na página-->
+        <section id="dsmovie-card-list" class="container">
+
+            <!--fazendo o card-->
+            <div class="dsmovie-card">
+                <img src="https://www.themoviedb.org/t/p/w533_and_h300_bestv2/jBJWaqoSCiARWtfV0GlqHrcdidd.jpg" alt="The Witcher">
+                <!--fazendo a descrição do card-->
+                <div class="dsmovie-card-description">
+                    <h3>The Witcher</h3>
+                    <a class="dsmovie-btn" href="form.html">Avaliar</a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
 </body>
 
 </html>
