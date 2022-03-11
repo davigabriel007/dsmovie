@@ -73,32 +73,35 @@ a, a:hover{
 
 /*estilizando card*/
 .dsmovie-card {
-    width: 360px;
+    width: 100%;
    
 }
 
-/*imagem ocupando 100% do espaço do card*/
+/*estilizando imagem do card*/
 .dsmovie-card img {
     width: 100%;
     border-radius: 8px 8px 0 0;
 }
 
- /*estilizando card*/
+ /*estilizando descrição do card*/
 .dsmovie-card-description {
-    padding: 10px 0 20px 0;
+    padding: 10px 20px 20px 20px;
+    background-color: var(--white);
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--white);
+    justify-content: space-between;
     border-radius: 0 0 8px 8px;
+    min-height: 150px;
 }
-
+/*estilizando titulo no card*/
 .dsmovie-card-description h3 {
     font-size: 14px;
     font-weight: 700;
     margin-bottom: 25px;
+    text-align: center;
 }
-
+/*estilizando botao no card*/
 .dsmovie-btn, .dsmovie-btn:hover {
     width: 180px;
     height: 40px;
