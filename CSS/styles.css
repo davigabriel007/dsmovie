@@ -1,82 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
 
 /*raiz do programa, usado especialmente para variaveis*/
 /*colocar as cores em variáveis no css é recomendado*/
 :root {
-    --bg-gray:#ddd;
-    --color-primary:#4D41C0;
-    --white:#fff;
+    --bg-gray: #ddd;
+    --color-primary: #4d41c0;
+    --white: #fff;
     --text-gray: #4a4a4a;
-    --form-gray:#aaaaaa;
-    --star-yellow: #FFBB3A;
+    --form-gray: #aaaaaa;
+    --star-yellow: #ffbb3a;
 }
 
-*{
+* {
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 /* bootstrap sobrescreve e a margem fica 0.5, então isto está dando margem 0 a todos os titulos*/
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
 }
 /*mudou a cor do corpo do site*/
-html, body{
+html,
+body {
     background-color: var(--bg-gray);
-
 }
 
 /*estilização cabeçalho*/
-header{
+header {
     background-color: var(--color-primary);
-    color:var(--white);
+    color: var(--white);
     height: 60px;
     display: flex;
     align-items: center;
-    
 }
 /*separando os itens do cabeçalho*/
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 /*definindo tamanho e espessura da fonta*/
-nav h1{
+nav h1 {
     font-size: 24px;
     font-weight: 700;
-
 }
 /* tamanho e espessura da fonta*/
-nav a{
+nav a {
     font-size: 12px;
     font-weight: 400;
-    
 }
 /* link não tem mais cor padrão e ao passar o mouse não muda de cor*/
-a, a:hover{
+a,
+a:hover {
     text-decoration: none;
     color: unset;
 }
 /*criando margem e alinhando ao centro o vetor e o link*/
-.dsmovie-contact-container{
-    display:flex;
+.dsmovie-contact-container {
+    display: flex;
     align-items: center;
-    
 }
 /*dando margem ao vector*/
-.dsmovie-contact-container img{
+.dsmovie-contact-container img {
     margin-right: 10px;
 }
 
 #dsmovie-card-list {
-    padding: 40px 10px;
-
-} 
+    padding: 0px 10px;
+}
 
 /*estilizando card*/
 .dsmovie-card {
     width: 100%;
-   
 }
 
 /*estilizando imagem do card*/
@@ -85,7 +85,7 @@ a, a:hover{
     border-radius: 8px 8px 0 0;
 }
 
- /*estilizando descrição do card*/
+/*estilizando descrição do card*/
 .dsmovie-card-description {
     padding: 10px 20px 20px 20px;
     background-color: var(--white);
@@ -107,14 +107,12 @@ a, a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .dsmovie-card-description-bottom h4 {
     font-size: 16px;
     font-weight: 700;
     color: var(--star-yellow);
-
 }
 
 .dsmovie-card-description-bottom p {
@@ -124,15 +122,13 @@ a, a:hover{
     margin: 10px;
 }
 
-
 .dsmovie-card-description-bottom img {
     width: 22px;
-
-
 }
 
 /*estilizando botao no card*/
-.dsmovie-btn, .dsmovie-btn:hover {
+.dsmovie-btn,
+.dsmovie-btn:hover {
     width: 180px;
     height: 40px;
     background-color: var(--color-primary);
@@ -158,7 +154,6 @@ a, a:hover{
     flex-direction: column;
     align-items: center;
     border-radius: 0 0 8px 8px;
-
 }
 .dsmovie-form-description h3 {
     font-size: 12px;
@@ -183,4 +178,47 @@ a, a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+
+.dsmovie-pagination-container {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+.dsmovie-pagination-box {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dsmovie-pagination-box p {
+    margin: 0;
+    font-size: 12px;
+    color: var(--color-primary);
+    font-weight: 400;
+}
+.dsmovie-pagination-box button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dsmovie-pagination-box button img {
+    filter: brightness(0) saturate(100%) invert(23%) sepia(68%) saturate(2150%) hue-rotate(233deg) brightness(91%) contrast(93%);
+}
+
+.dsmovie-pagination-box button:disabled {
+    border: 1px solid var(--form-gray);
+}
+
+.dsmovie-pagination-box button:disabled img {
+    filter: unset;
+}
+
+.dsmovie-flip-horizontal {
+    transform: rotate(180deg);
 }
