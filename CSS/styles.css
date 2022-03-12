@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 /*raiz do programa, usado especialmente para variaveis*/
 /*colocar as cores em variáveis no css é recomendado*/
@@ -12,21 +12,16 @@
 }
 
 * {
+    margin: 0;
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
 }
 /* bootstrap sobrescreve e a margem fica 0.5, então isto está dando margem 0 a todos os titulos*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 /*mudou a cor do corpo do site*/
-html,
-body {
+html, body {
     background-color: var(--bg-gray);
 }
 
@@ -55,8 +50,7 @@ nav a {
     font-weight: 400;
 }
 /* link não tem mais cor padrão e ao passar o mouse não muda de cor*/
-a,
-a:hover {
+a, a:hover {
     text-decoration: none;
     color: unset;
 }
@@ -127,8 +121,7 @@ a:hover {
 }
 
 /*estilizando botao no card*/
-.dsmovie-btn,
-.dsmovie-btn:hover {
+.dsmovie-btn, .dsmovie-btn:hover {
     width: 180px;
     height: 40px;
     background-color: var(--color-primary);
