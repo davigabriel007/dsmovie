@@ -8,6 +8,7 @@
     --white:#fff;
     --text-gray: #4a4a4a;
     --form-gray:#aaaaaa;
+    --star-yellow: #FFBB3A;
 }
 
 *{
@@ -93,7 +94,7 @@ a, a:hover{
     align-items: center;
     justify-content: space-between;
     border-radius: 0 0 8px 8px;
-    min-height: 150px;
+    height: 220px;
 }
 /*estilizando titulo no card*/
 .dsmovie-card-description h3 {
@@ -102,6 +103,34 @@ a, a:hover{
     margin-bottom: 25px;
     text-align: center;
 }
+.dsmovie-card-description-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.dsmovie-card-description-bottom h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--star-yellow);
+
+}
+
+.dsmovie-card-description-bottom p {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--form-gray);
+    margin: 10px;
+}
+
+
+.dsmovie-card-description-bottom img {
+    width: 22px;
+
+
+}
+
 /*estilizando botao no card*/
 .dsmovie-btn, .dsmovie-btn:hover {
     width: 180px;
